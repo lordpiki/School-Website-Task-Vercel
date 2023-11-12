@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="message">{{ message }}</p>
+        <p>Already have an account? <a class="login_question" href="/login">Login</a></p>
+    </div>
+</body>
+
+{% endblock %}
+

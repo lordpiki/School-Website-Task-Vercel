@@ -1,0 +1,47 @@
+h1 {
+    color: rgba(213, 76, 164, 1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.signup-link {
+    background-color: rgba(213, 76, 164, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    background-color: rgba(175, 43, 129, 1);
+}
+
+.signup-link.dark-mode {
+    background-color:  rgba(130, 30, 148, 1); 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input.error {
+    border: 3px solid red;
+    color: red;
+}

@@ -1,0 +1,26 @@
+.form-group {
+    
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+
+
+.login_question {
+    color: rgba(213, 76, 164, 0.8);
+    text-decoration: none;
+}
+
+.login_question.dark-mode {
+    color: rgba(213, 76, 164, 1);;
+}
+
+.message {
+    color: red
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tic_tac_toe.css') }}">
+</head>
+<div class="board-container">
+    <div class="board">
+        <div class="row">
+            <div class="cell top-left"></div>
+            <div class="cell"></div>
+            <div class="cell top-right"></div>
+        </div>
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell bottom-left"></div>
+            <div class="cell"></div>
+            <div class="cell bottom-right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="button-container">
+    <button class="button" onclick="resetBoard()">Reset Board</button>
+    <button class="difficulty-button" id="difficulty-button" onclick="resetBoard()">Mode - Hard</button>
+</div>
+<script src="{{ url_for('static', filename='js/tic-tac-toe.js') }}"></script>
+
+{% endblock %}

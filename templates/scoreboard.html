@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/scoreboard.css') }}">
+    </head>
+<body>
+    <div class="scoreboard-container">
+        <h2>Scoreboard for {{ user.username }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Outcome of last games</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result.outcome }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+{% endblock %}
+
